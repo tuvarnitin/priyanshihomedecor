@@ -36,6 +36,7 @@ const HeroBanner = () => {
             className="w-full h-full object-cover object-center"
           />
         </div>
+        {/* test comment*/}
 
       </div>
     </div>
