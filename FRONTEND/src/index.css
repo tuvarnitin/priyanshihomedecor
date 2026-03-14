@@ -1,2 +1,44 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+    font-family: outfit-light;
+    src: url(./assets/fonts/Outfit/static/Outfit-Light.ttf);
+}
+
+@font-face {
+    font-family: outfit-ragular;
+    src: url(./assets/fonts/Outfit/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: outfit-bold;
+    src: url(./assets/fonts/Outfit/static/Outfit-Bold.ttf);
+}
+
+@font-face {
+    font-family: prata;
+    src: url(./assets/fonts/Prata/Prata-Regular.ttf);
+}
+
+a.active{
+    border-bottom: 1px solid black;
+}
+html,
+body {
+    width: 100%;
+    min-height: 100dvh;
+}
+
+@theme {
+    --color-background: var(--color-white);
+    --color-foreground: var(--color-zinc-900);
+}
+
+@layer base {
+    html,
+    body {
+        @apply bg-background text-foreground font-[outfit-light];
+    }
+}
