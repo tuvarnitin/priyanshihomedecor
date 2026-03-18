@@ -49,11 +49,12 @@ body {
     --text-responsive-large : max(20px, 1.6vw);
     --text-responsive-xlarge : max(24px, 2vw);
 
-    --leading-responsive-xsmall: max(8px, .7vw);
-    --leading-responsive-small: max(12px, 1vw);
-    --leading-responsive-medium: max(16px, 1.3vw);
-    --leading-responsive-large: max(20px, 1.6vw);
-    --leading-responsive-xlarge: max(24px,2vw);
+    /* Leading is 1.25 times of the font-size */
+    --leading-responsive-xsmall: max(10px, .85vw);
+    --leading-responsive-small: max(15px, 1.25vw);
+    --leading-responsive-medium: max(20px, 1.65vw);
+    --leading-responsive-large: max(25px, 2vw);
+    --leading-responsive-xlarge: max(30px,2.5vw);
 
     --shadow-raised:
             2px 2px 10px var(--color-background),
