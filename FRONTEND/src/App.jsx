@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Collections from './pages/Collections'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact-us' element={<ContactUs />} />
       </Routes>
+      <div>
+        <Footer />
+      </div>
     </div>
   )
 }
