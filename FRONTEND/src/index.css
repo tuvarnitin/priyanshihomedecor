@@ -22,6 +22,11 @@
     src: url(./assets/fonts/Prata/Prata-Regular.ttf);
 }
 
+@font-face {
+    font-family: playfair;
+    src: url(./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 a.active{
     border-bottom: 1px solid black;
 }
@@ -34,11 +39,30 @@ body {
 @theme {
     --color-background: var(--color-white);
     --color-foreground: var(--color-zinc-900);
+    --color-shadow: var(--color-zinc-400);
+    --font-playfair: "playfair";
+
+
+    --text-responsive-xsmall : max(8px, .7vw);
+    --text-responsive-small : max(12px, 1vw);
+    --text-responsive-medium : max(16px, 1.3vw);
+    --text-responsive-large : max(20px, 1.6vw);
+    --text-responsive-xlarge : max(24px, 2vw);
+
+    --leading-responsive-xsmall: max(8px, .7vw);
+    --leading-responsive-small: max(12px, 1vw);
+    --leading-responsive-medium: max(16px, 1.3vw);
+    --leading-responsive-large: max(20px, 1.6vw);
+    --leading-responsive-xlarge: max(24px,2vw);
+
+    --shadow-raised:
+            2px 2px 10px var(--color-background),
+            -2px -2px 10px var(--color-shadow);
 }
 
 @layer base {
     html,
     body {
-        @apply bg-background text-foreground font-[outfit-light];
+        @apply bg-background text-foreground font-playfair;
     }
 }
